@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#48A8F3"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="3dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_back_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="盘点"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="任务"
+            android:textColor="#3FA5FF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="子单"
+            android:textColor="#3FA5FF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/childmenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/particular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="任务"
+            android:textColor="#3FA5FF"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bianhao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品编号" />
+
+        <TextView
+            android:id="@+id/mingcheng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品名称" />
+
+        <TextView
+            android:id="@+id/tiaoma"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品条码" />
+
+        <TextView
+            android:id="@+id/shoujia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品数量" />
+
+        <TextView
+            android:id="@+id/shoujia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品售价" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/purchaselistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ecode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="商品条码"
+            android:inputType="number"
+            android:maxLength="13"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cselect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.51"
+            android:background="@drawable/selectoritemleft"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DA4036" />
+
+        <Button
+            android:id="@+id/cpurchasescan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/selectoritemright"
+            android:gravity="center"
+            android:text="扫描添加商品"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/goodname"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:text="商品名" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/goodsnum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="数量"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+    
+
+        <Button
+            android:id="@+id/ccancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selectoritemright"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+            <Button
+            android:id="@+id/ccommit"
+             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selectoritemleft"
+            android:enabled="false"
+            android:text="提交" /> />
+    </LinearLayout>
+
+</LinearLayout>

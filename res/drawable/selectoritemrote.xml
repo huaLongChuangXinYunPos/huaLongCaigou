@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+
+            <!-- //边缘颜色   按钮四个圆角="" -->
+            <corners android:bottomLeftRadius="0.01dip" android:bottomRightRadius="0.01dip" android:topLeftRadius="0.01dip" android:topRightRadius="0.01dip" />
+
+            <stroke android:width="30dp" android:color="#FFE947" />
+        </shape></item>
+    <item android:state_pressed="false"><shape>
+
+            <!-- //边缘颜色   按钮四个圆角="" -->
+            <corners android:bottomLeftRadius="0.01dip" android:bottomRightRadius="0.01dip" android:topLeftRadius="0.01dip" android:topRightRadius="0.01dip" />
+
+            <stroke android:width="30dp" android:color="#5B75B7" />
+        </shape></item>
+
+</selector>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- //边缘颜色   按钮四个圆角="" -->
+    <corners
+        android:bottomLeftRadius="11dip"
+        android:bottomRightRadius="11dip"
+        android:topLeftRadius="11dip"
+        android:topRightRadius="11dip" />
+
+    <stroke
+        android:width="3dp"
+        android:color="#4AB7FF" />
+
+ 
+
+</shape>

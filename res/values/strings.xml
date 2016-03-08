@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">华隆采购</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="scan_text">将条形码放入框内, 即可自动扫描</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="onorder">已采购</string>
+    <string name="check">盘点信息</string>
+    <string name="stock">查看库存</string>
+    <string name="welcomepurchase">欢迎采购</string>
+    <string name="title_activity_content_main">ContentMainActivity</string>
+    <string name="title_activity_check_content_main">CheckContentMainActivity</string>
+    <string name="title_activity_select_main">SelectMainActivity</string>
+
+</resources>
